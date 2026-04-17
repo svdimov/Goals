@@ -23,8 +23,8 @@ services:
         networks:
             - react-net
         environment:
-            - MONGO_INITDB_ROOT_USERNAME=mongoadmin
-            - MONGO_INITDB_ROOT_PASSWORD=secret
+            - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
         image: mongo
 networks:
     react-net:
